@@ -1,1 +1,3 @@
 # caesar-cipher
+
+Hey everyone! This is my first ever independent project away from TOP. It will still be on the account where I store all my TOP projects, and will still use many of the same principles. However, I will just be putting my own twist on everything and doing things the way I want! Today, I will just be creating a simple Caesar Cipher Program to test and review some programming concepts, but more importantly, the implementation of them in JavaScript. With that being said, thank you for viewing this repo and I hope you enjoyed!
