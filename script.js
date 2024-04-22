@@ -19,3 +19,5 @@ function shiftMessage(message, shiftAmount) {
     }
     return shiftedMessage;
 }
+
+let submitButton = document.querySelector("input");
