@@ -14,10 +14,19 @@ function shiftMessage(message, shiftAmount) {
     let shiftedLetterIndex; 
     for (const msgLetter of message) {
         currentLetterIndex = alphabet.findIndex((letter) => letter == msgLetter);
-        shiftedLetterIndex = currentLetterIndex+shiftAmount;
+        shiftedLetterIndex = +currentLetterIndex+ +shiftAmount;
         shiftedMessage += alphabet[shiftedLetterIndex];
     }
     return shiftedMessage;
 }
 
-let submitButton = document.querySelector("input");
+let submitButton = document.querySelector("input[type='submit']");
+let messageBox = document.querySelector("input[type='text']");
+let shiftBox = document.querySelector("input[type='number']");
+let outputMessageBox = document.querySelector("div");
+submitButton.addEventListener("click", () => {
+    let message = shiftMessage(messageBox.value, shiftBox.value);
+    messageBox.value = "";
+    shiftBox.value = "";
+    outputMessageBox.textContent += message;
+})
